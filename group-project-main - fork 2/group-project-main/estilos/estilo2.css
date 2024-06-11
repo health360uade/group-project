@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #feffffec;
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     width: 100%;
     max-width: 1300px;
@@ -41,7 +41,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    padding: 15px 0;
+    padding: 15px 5px;
     margin-top: 2px;  
     margin-bottom: 1px;
 }
@@ -78,9 +78,11 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    
+
     .content {
         flex-direction: column;
-        padding: 10px 0;
+        padding: 10px;
         align-items: center; 
     }
 
@@ -99,7 +101,7 @@ h1 {
     }
 
     .logo {
-        width: 100%;
+        width: 50%;
         margin-top: 15px;
     }
 }

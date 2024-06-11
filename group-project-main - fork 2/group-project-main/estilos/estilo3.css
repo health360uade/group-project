@@ -1,0 +1,19 @@
+.parallax-background {
+    background: url('assets/portada1.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.parallax-text {
+    font-size: M; /* Cambia 'M' por el tamaño del texto que prefieras, por ejemplo, 2em */
+    color: white; /* Cambia el color del texto si es necesario */
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta la transparencia del fondo del texto */
+    padding: 10px; /* Ajusta el espacio alrededor del texto */
+}
