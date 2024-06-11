@@ -6,46 +6,175 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/estilo.css">
-    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon32.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
         rel="stylesheet" />
+
+    <!-- Archivo CSS de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Archivo JavaScript de Bootstrap 5 (necesario para algunas funcionalidades como el menú desplegable) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <title>Health360 | Inicio</title>
 </head>
 
 <body>
-    <nav class="nav-inicio">
-        <div class="navdiv">
-            <a style="display: flex;" href="index.html"><img src="assets/salud-logo-efect.png" alt="" height="100px"></a>
-            <div class="labeldiv">
-                <input type="checkbox" id="menu">
-                <label for="menu"> ☰ </label>
-                <ul class="lista">
-                    <li><a class="activo" href="index.html">Inicio</a></li>
-                    <li><a href="integrantes.html">Integrantes</a></li>
-                    <li><a href="avances.html">Avances</a></li>
-                    <li><a href="juegos.html">Juegos</a></li>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="assets/salud-logo-efect.png" alt=" Logo"
+                    height="100px" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item activo">
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="integrantes.html">Integrantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="avances.html">Avances</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="juegos.html">Juegos</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div style="display: flex;">
-        <img src="assets/portada.png" alt="" width="100%" height="600px">
+
+
+    <!-- Sección de Título para Datos del Equipo END -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/portada1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the First slide.</p> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/portada2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/portada3.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the Third slide.</p> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/portada.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>Four slide label</h5>
+                    <p>Some representative placeholder content for the Four slide.</p> -->
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
 
-    <main class="main-inicio">
-        <section style="display: flex; flex-direction: column;height: 500px;" class="seccion-2">
-            <img src="assets/Salud.gif" alt="Descripción del GIF">
-    </section>
-    </main>
-    <footer>
-        <img src="assets/uade.png" alt="Logo UADE">
-    </footer>
 
+    <!--  Sección de Título para Datos del Equipo de la pag principal start -->
+    <div class="container teamdiv">
+        <div class="team-data">
+            <h1>Datos del equipo</h1>
+        </div>
+        <div class="content">
+
+            <div class="info">
+                <p><span class="bold">Número del equipo:</span> 7</p>
+                <p><span class="bold">Nombre del equipo:</span> HEALTH 360</p>
+                <p><span class="bold">Año y curso:</span> Primer año - 428017</p>
+                <p><span class="bold">Materia:</span> Diseño y Desarrollo Web</p>
+                <p><span class="bold">Docente:</span> Litovicus Patricia Carina</p>
+            </div>
+            <div class="logo"> <!-- Sección del imagen del Logo de la pag principal -->
+                <div style="display: flex;">
+                    <img src="assets/foto-uade-principal.jpg" alt="Logo UADE" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer start  -->
+    <footer class="d-flex  border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-body-secondary">&copy; Derechos reservados - Sitio desarrollado para uso
+                educativo - Diseño y desarrollo Web - UADE - 2024</span>
+        </div>
+        <div class="col-md-1 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <img src="assets/uade.png" alt="Logo UADE"> </a>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="https://github.com/health360uade/group-project"><svg
+                        class="bi" width="24" height="24">
+                        <use xlink:href="#Github" />
+                    </svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="https://www.figma.com/"><svg class="bi" width="24"
+                        height="24">
+                        <use xlink:href="#Figma" />
+                    </svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/health360uade/"><svg
+                        class="bi" width="24" height="24">
+                        <use xlink:href="#Instagram" />
+                    </svg></a></li>
+        </ul>
+    </footer>
+    <!-- Footer end  -->
+
+    <!-- SVG Icons -->
+    <svg style="display:none;">
+        <symbol id="Github" viewBox="0 0 16 16">
+            <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.13 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.11.16 1.93.08 2.13.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+        </symbol>
+        <symbol id="Figma" viewBox="0 0 24 24">
+            <path xmlns="http://www.w3.org/2000/svg"
+                d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.02 3.019 3.02h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49zm-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-.098z" />
+        </symbol>
+        <symbol id="Instagram" viewBox="0 0 16 16">
+            <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 4.42 3.58 8 8 8 4.42 0 8-3.58 8-8 0-4.42-3.58-8-8-8zm4.39 2.39c.32 0 .59.12.82.35.23.23.35.5.35.82 0 .32-.12.59-.35.82a1.15 1.15 0 0 1-.82.35c-.32 0-.59-.12-.82-.35a1.15 1.15 0 0 1-.35-.82c0-.32.12-.59.35-.82.23-.23.5-.35.82-.35zM8 3.18c1.22 0 1.47.01 2 .03.51.02.78.1.96.17.23.09.39.2.56.37.17.17.28.33.37.56.07.18.15.45.17.96.02.53.03.78.03 2s-.01 1.47-.03 2c-.02.51-.1.78-.17.96-.09.23-.2.39-.37.56-.17.17-.33.28-.56.37-.18.07-.45.15-.96.17-.53.02-.78.03-2 .03s-1.47-.01-2-.03c-.51-.02-.78-.1-.96-.17-.23-.09-.39-.2-.56-.37-.17-.17-.28-.33-.37-.56-.07-.18-.15-.45-.17-.96-.02-.53-.03-.78-.03-2s.01-1.47.03-2c.02-.51.1-.78.17-.96.09-.23.2-.39.37-.56.17-.17.33-.28.56-.37.18-.07.45-.15.96-.17.53-.02.78-.03 2-.03zM8 5.44c-1.41 0-2.56 1.15-2.56 2.56S6.59 10.56 8 10.56s2.56-1.15 2.56-2.56S9.41 5.44 8 5.44zm0 1.28c.71 0 1.28.57 1.28 1.28s-.57 1.28-1.28 1.28-1.28-.57-1.28-1.28.57-1.28 1.28-1.28z" />
+        </symbol>
+    </svg>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="codigo.js"></script>
 </body>
 
