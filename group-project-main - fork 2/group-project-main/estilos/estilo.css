@@ -47,17 +47,17 @@ body {
 }
 
 .navdiv ul li a:hover {
-    background-color: #f7f7f7;
+    background-color: #eff8f8;
     transition: 150ms;
 }
 
 .navdiv ul li a:active {
-    background-color: #ebebeb;
+    background-color: #cbebea;
 }
 
 .activo {
-    background-color: #ebebeb;
-    border: #313131 1px solid;
+    background-color: #a5dddc;
+    border: #6dbebd 1px solid;
 }
 
 .main-inicio {
@@ -274,7 +274,6 @@ label {
     }
 }
 
-
 .seccion-propuesta {
     background-color: #F3F3F3;
     height: 520px;
@@ -417,7 +416,7 @@ label {
     font-size: 15px;
 } */
 footer {
-    background: var(--Color-boton, linear-gradient(90deg, #cbebea 0%, #a5dddc 100%));
+    background: var(--Color-boton, linear-gradient(90deg, #cbebea 0%, #7dc0bf 100%));
     padding: 8px 0;
     text-align: center;
 }
