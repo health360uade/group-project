@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap');
+
 body {
     margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif !important;
     box-sizing: border-box;
     font-family: Poppins;
     user-select: none;
     overflow-x: hidden;
+    height: 100%;
 }
 
 * {
@@ -348,6 +353,7 @@ label {
     background-color: #a5dddc;
     border: #313131 3px solid;
 }
+
 #color4 {
     background-color: #F3F3F3;
     border: #313131 3px solid;
@@ -365,17 +371,6 @@ label {
     flex-direction: row;
 }
 
-/* footer {
-    background-color: white;
-    height: 80px;
-    width: 100%;
-    color: black;
-    font-weight: 200;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    font-size: 15px;
-} */
 footer {
     background: var(--Color-boton, linear-gradient(90deg, #cbebea 0%, #7dc0bf 100%));
     padding: 8px 0;
@@ -386,12 +381,6 @@ footer img {
     width: 150px;
     text-align: center;
 }
-
-/* footer div {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-} */
 
 .seccion-2 {
     background-color: #F3F3F3;
@@ -904,7 +893,8 @@ h1 {
 }
 
 #backToTop {
-    display: none; /* Ocultar el botón por defecto */
+    display: none;
+    /* Ocultar el botón por defecto */
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -926,4 +916,20 @@ h1 {
 #backToTop svg {
     width: 30px;
     height: 30px;
+}
+
+
+.detalles a {
+    text-decoration: none;
+    color: #313131;
+    background-color: #cbebea;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 4px 20px;
+    border-radius: 20px;
+}
+
+.detalles a:hover {
+    background-color: #eff8f8;
+    transition: 150ms;
 }
