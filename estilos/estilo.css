@@ -195,8 +195,21 @@ label {
     }
 
     .seccion-avances {
-        width: 270px !important;
-        height: 925px !important;
+        width: 350px !important;
+        height: 965px !important;
+        padding: 10px 20px !important;
+    }
+
+
+    .seccion-avances1 p {
+        padding: 0px !important;
+        font-size: 20px !important;
+    }
+
+    .seccion-avances1 {
+        width: 350px !important;
+        height: 865px !important;
+        padding: 10px 20px !important;
     }
 
     p {
@@ -205,8 +218,9 @@ label {
     }
 
     .seccion-avances2 {
-        width: 270px !important;
-        height: 4300px !important;
+        width: 350px !important;
+        height: 1200px !important;;
+        padding: 10px 20px !important;
     }
 
     .seccion-2 p {
@@ -729,7 +743,7 @@ footer {
 }
 
 .carousel-item img {
-    max-height: 500px;
+    max-height: 550px;
     object-fit: cover;
     width: auto;
     margin: 0 auto;
