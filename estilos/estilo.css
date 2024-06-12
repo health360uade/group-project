@@ -767,6 +767,12 @@ footer {
     text-align: left;
 }
 
+.lista-detalle{
+    color: #666;
+    font-size: 22px;
+    text-align: left;
+}
+
 .content {
     display: flex;
     flex-direction: row;
