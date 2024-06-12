@@ -200,6 +200,11 @@ label {
         padding: 10px 20px !important;
     }
 
+    .seccion-avances-guia {
+        width: 350px !important;
+        height: 1240px  !important;
+        padding: 10px 20px !important;
+    }
 
     .seccion-avances1 p {
         padding: 0px !important;

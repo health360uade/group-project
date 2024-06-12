@@ -20,10 +20,16 @@ body {
 
 .game-img {
     max-width: 100%;
-    height: 500px; /* Ajusta la altura de la imagen */
+    height: 500px; 
     border-radius: 10px;
     margin-bottom: 20px;
 }
+
+
+@media (max-width: 1130px) {
+    .game-img {
+        height: 350px !important; 
+    }}
 
 .story p {
     font-size: 18px;
@@ -31,7 +37,6 @@ body {
     font-family: 'Open Sans', sans-serif !important;
 }
 
-/* Estilos para los botones de las preguntas */
 .story-container button.option {
     font-family: 'Open Sans', sans-serif !important;
     text-decoration: none;
@@ -50,7 +55,6 @@ body {
     background-color: #cbebea;
 }
 
-/* Estilos para el botón de volver al inicio */
 #return-btn {
     font-family: 'Open Sans', sans-serif !important;
     display: block;
