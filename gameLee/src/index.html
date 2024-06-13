@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego para el 2do parcial - Lee - 2024</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Página de bienvenida -->
+    <div class="splash-container d-flex justify-content-center align-items-center text-center">
+        <h1 class="splash-text">.</h1> <!-- Texto de bienvenida -->
+    </div>
+
+    <!-- Fondo -->
+    <video autoplay muted loop id="background-video">
+        <source src="assets/wallpaper.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+
+    <!-- inicio del juego -->
+    <div id="start-screen" class="container d-none d-flex flex-column align-items-center justify-content-center">
+        <input type="text" id="player-name" class="form-control mb-3" placeholder="Ingresa tu nombre">
+        <button id="start-button" class="btn btn-primary">Comenzar</button>
+    </div>
+
+    <!-- eventos -->
+    <div id="game-screen" class="container d-none"></div>
+
+    <!-- Música de fondo -->
+    <audio id="background-music" autoplay loop>
+        <source src="assets/backmusic.mp3" type="audio/mp3">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
