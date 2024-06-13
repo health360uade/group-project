@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="../../estilos/estilo.css">
     <link rel="shortcut icon" href="assets/favicon32.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,13 +19,13 @@
 
     <!-- Archivo JavaScript de Bootstrap 5 (necesario para algunas funcionalidades como el menú desplegable) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Health360 | Juegos </title>
+    <title>Health360 | Salud Mental - Manual de Juego </title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="assets/salud-logo-efect.png" alt=" Logo"
+            <a class="navbar-brand" href="../../index.html"><img src="../../assets/salud-logo-efect.png" alt=" Logo"
                     height="100px" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,52 +34,57 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item ">
-                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="../../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="integrantes.html">Integrantes</a>
+                        <a class="nav-link" href="../../integrantes.html">Integrantes</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="avances.html">Avances</a>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../../avances.html">Avances</a>
                     </li>
                     <li class="nav-item activo">
-                        <a class="nav-link" href="juegos.html">Juegos</a>
+                        <a class="nav-link" href="../../juegos.html">Juegos</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!--  PARALLAX BACKGRIUND -->
     <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="active"
-                aria-current="true" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item ">
-                <img src="assets/portada1.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/portada2.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/portada3.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
-            </div>
             <div class="carousel-item active">
-                <img src="assets/portada.png" class="d-block w-100" alt="...">
+                <img src="../../assets/portada1.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
+                    <h2>Hablar sin miedo sobre problemáticas que nos afectan</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../../assets/portada2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Buscar una actividad que nos apasione</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../../assets/portada3.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Empatía con los demás</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../../assets/portada.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Formar parte de una comunidad o deporte</h2>
                 </div>
             </div>
         </div>
@@ -95,94 +100,36 @@
         </button>
     </div>
 
-    <!--  Sección de Título para Datos del Equipo de la pag principal start -->
-    <div class="container teamdiv">
-        <div class="team-data">
-            <h1>Juegos</h1>
-        </div>
-        <div class="content-int">
 
-            <div class="row">
-                <div class="col-12 col-md-4">
-                    <div class="card card-dev m-1">
-                        <img class="p-2 card-img-dev" src="assets/integrantes/lee.jpg" alt="Foto de Lee Hyo Lin" />
-                        <div class="card-body">
-                            <h5 class="card-title">Lee Hyo Lin</h5>
-                            <p class="card-text">
-                                En el mundo actual, niños y jóvenes se enfrentan a numerosas influencias que pueden poner en riesgo su salud física y mental. 
-                                Desde la presión social hasta el acceso a sustancias nocivas, son constantemente bombardeados con decisiones que pueden afectar su bienestar a largo plazo. 
-                                Más aún, a menudo son atraídos o llevados a situaciones que, sin saberlo, pueden causarles daños emocionales, psicológicos y físicos. 
-                                Creemos que es fundamental ofrecer a los jóvenes la oportunidad de reflexionar sobre situaciones que podrían encontrar en su día a día. 
-                            </p>
-                            <a href="gameLee/src/index.html">A jugar</a>
-                            <a href="gameLee/juegoleeguide.html">Manual</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="card card-dev m-1">
-                        <img class="p-2 card-img-dev" src="assets/integrantes/marce.jpg"
-                            alt="Foto de Mansilla Marcelo" />
-                        <div class="card-body">
-                            <h5 class="card-title">Mansilla Marcelo</h5>
-                            <p class="card-text">
-                                La salud mental es, lamentablemente, el ámbito que más se pasa por alto a la hora de
-                                analizar la salud de un individuo, pero no por nada es uno de los pilares en la salud.
-                                La falta de sociabilización tapada por el gran uso del celular y computadoras,
-                                incluyendo el estrés y poco tiempo disponible por trabajo u otras actividades como por
-                                ejemplo, ser estudiante agotan nuestras energías y poco a poco desgastan nuestra
-                                psiquis.
-                                Por otro lado, la falta de sueño, luz solar y actividad física contribuyen enormemente a
-                                esta problemática por generar un desbalance hormonal asociado a la vitamina D,
-                                serotonina y dopamina entre otros que repercute directamente en nuestro cerebro y en
-                                funcionamiento normal del mismo.
-                            </p>
-                            <a href="juegos/mm/mentalHealth.html">A jugar</a>
-                            <a href="juegos/mm/guide.html">Manual</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="card card-dev m-1">
-                        <img class="p-2 card-img-dev" src="assets/salud.png" alt="Foto de Juliano Pedro Gaston"
-                            height="150px">
-                        <div class="card-body">
-                            <h5 class="card-title">Juliano Pedro Gaston</h5>
-                            <p class="card-text">
-                                <!-- Desarrollo - Ideas -->
-                            </p>
-                            <a href="https://www.google.com/?hl=es" target="_blank">Juego</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="card card-dev m-1">
-                        <img class="p-2 card-img-dev" src="assets/integrantes/agus.jpg" alt="Foto de Lucki Agustin" height="150px">
-                        <div class="card-body">
-                            <h5 class="card-title">Lucki Agustin</h5>
-                            <p class="card-text">
-                                ...
-                            </p>
-                            <a href="juegoagus/index.html" target="_blank">Juego</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="card card-dev m-1">
-                        <img class="p-2 card-img-dev" src="assets/salud.png" alt="Foto de Maiz Ariel Arnaldp"
-                            height="150px">
-                        <div class="card-body">
-                            <h5 class="card-title">Maiz Ariel Arnaldo</h5>
-                            <p class="card-text">
-                                ...
-                            </p>
-                            <a href="https://www.google.com/?hl=es" target="_blank">Juego</a>
-                        </div>
-                    </div>
-                </div>
+    <main class="main-inicio-2">
+        <section class="seccion-avances seccion-avances-guia">
+            <div>
+                <h1>Manual de Juego</h1>
             </div>
-        </div>
-    </div>
+            <div class="div-avances">
+                <p>
+                    Bienvenido al juego "Sé Saludable". En este juego RPG de texto, asumirás el papel de Juan, un estudiante de 15 años enfrentándose a diversas situaciones que ponen a prueba su salud física y mental. 
+
+                </p>
+            </div>
+            <div class="detalles">
+                <h3>Cómo Jugar</h3>
+                <ol class="lista-detalle">
+                    <li >Se te presentará una serie de situaciones en forma de texto.</li>
+                    <li>Cada situación viene con dos opciones: una saludable y otra perjudicial.</li>
+                    <li>Debes leer cuidadosamente y seleccionar la opción que consideres mejor para la salud y el bienestar del personaje.</li>
+                </ol>
+            </div>
+            <div class="detalles">
+                <h3>Objetivo</h3>
+                <p>Este juego está diseñado para ayudar a los jóvenes a visualizar y practicar la toma de decisiones saludables frente a presiones cotidianas, promoviendo un enfoque proactivo hacia la salud mental y física.</p>
+            </div>
+            <div class="detalles">
+                <p>¡Disfruta del juego!</p>
+                <a href="/gameLee/src/index.html">A jugar</a>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer start  -->
     <footer class="d-flex  border-top">
@@ -192,7 +139,7 @@
         </div>
         <div class="col-md-1 d-flex align-items-center">
             <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                <img src="assets/uade.png" alt="Logo UADE"> </a>
+                <img src="../../assets/uade.png" alt="Logo UADE"> </a>
         </div>
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
             <li class="ms-3"><a class="text-body-secondary" href="https://github.com/health360uade/group-project"><svg
