@@ -921,7 +921,7 @@ h1 {
     display: none;
     /* Ocultar el botón por defecto */
     position: fixed;
-    bottom: 20px;
+    bottom: 120px;
     right: 20px;
     z-index: 99;
     background-color: #cbebea;
