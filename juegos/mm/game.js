@@ -197,14 +197,12 @@ $(document).ready(function () {
   displayStory(1);
 
   // Función para imprimir la página
-function printCertificate() {
-  window.print();
-}
+  function printCertificate() {
+    window.print();
+  }
 
-// Agregar el evento de clic para el botón de impresión del certificado
-$("#story").on("click", "#print-certificate", function () {
-  printCertificate();
+  // Agregar el evento de clic para el botón de impresión del certificado
+  $("#story").on("click", "#print-certificate", function () {
+    printCertificate();
+  });
 });
-});
-
-
