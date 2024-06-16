@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +10,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+
+
+
+
+    <!-- Título fijo en la parte superior -->
+    <div class="fixed-top bg-custom text-center">
+        <h1 class="title-text">Sé Saludable</h1>
+    </div>
+
+
+
+
+
     <!-- Página de bienvenida -->
     <div class="splash-container d-flex justify-content-center align-items-center text-center">
-        <h1 class="splash-text">.</h1> <!-- Texto de bienvenida -->
+        <h1 class="splash-text">.</h1> <!-- Texto de bienvenida oculto -->
     </div>
+
+
+
+
+
 
     <!-- Fondo -->
     <video autoplay muted loop id="background-video">
@@ -19,14 +40,24 @@
         Tu navegador no soporta la etiqueta de video.
     </video>
 
+
+
+
+
     <!-- inicio del juego -->
     <div id="start-screen" class="container d-none d-flex flex-column align-items-center justify-content-center">
         <input type="text" id="player-name" class="form-control mb-3" placeholder="Ingresa tu nombre">
         <button id="start-button" class="btn btn-primary">Comenzar</button>
     </div>
 
+
+
+
     <!-- eventos -->
     <div id="game-screen" class="container d-none"></div>
+
+
+
 
     <!-- Música de fondo -->
     <audio id="background-music" autoplay loop>
